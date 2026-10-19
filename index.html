@@ -242,8 +242,8 @@
 
             <div class="price-wrap">
                 <div style="display: flex; flex-direction: column;">
-                    <span class="price-old">3700 ₴</span>
-                    <span class="price-new">3500 ₴</span>
+                    
+                    <span class="price-new">3750 ₴</span>
                 </div>
                 <span class="in-stock">В наявності</span>
             </div>
@@ -371,8 +371,8 @@
 
     <div class="mobile-sticky-buy mobile-only">
         <div class="sticky-price">
-            <span class="st-old">3700 ₴</span>
-            <span class="st-new">3500 ₴</span>
+            
+            <span class="st-new">3750 ₴</span>
         </div>
         <button class="buy-btn" onclick="openOrderModal()">🛒 Купити</button>
     </div>
@@ -646,7 +646,7 @@
             <div><strong>Модель:</strong> Напівчеревики байка/хутро</div>
             <div style="margin: 5px 0;"><strong>Колір:</strong> ${activeColorName}</div>
             <div><strong>Розмір:</strong> ${activeSize}</div>
-            <div style="margin-top: 10px; font-size: 18px; color: #d32f2f;"><strong>Сума:</strong> <span style="font-weight: 800;">3500 ₴</span></div>
+            <div style="margin-top: 10px; font-size: 18px; color: #d32f2f;"><strong>Сума:</strong> <span style="font-weight: 800;">3750 ₴</span></div>
         `;
 
         document.getElementById('mainForm').style.display = 'block';
@@ -760,7 +760,7 @@
             productName: "Напівчеревики байка/хутро",
             colorName: activeColorName,
             size: activeSize,
-            price: "3500",
+            price: "3750",
             name: name,
             displayPhone: displayPhone,
             cleanPhone: cleanPhone,
@@ -779,7 +779,7 @@
         .then(data => {
             if (data.success) {
                 if(typeof fbq === 'function') fbq('track', 'Purchase', {
-                    value: Number('3500'), 
+                    value: Number('3750'), 
                     currency: 'UAH', 
                     content_name: 'Напівчеревики байка/хутро ' + activeColorName
                 });
@@ -787,7 +787,7 @@
                 if(window.ttq) {
                     window.ttq.track('CompletePayment', {
                         content_type: 'product',
-                        value: Number('3500'),
+                        value: Number('3750'),
                         currency: 'UAH',
                         contents:[{
                             content_id: 'para_item',
